@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+}
+body {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+}
+form {
+    width: 500px;
+    background-color: #fff;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    padding: 20px;
+    box-shadow: rgba(32, 32, 34, 0.2) 0px 7px 29px 0px;
+    margin-right: 20px;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction:row;
+}
+.title{
+    font-size: 30px;
+    text-align: center;
+}
+img{
+    width: 150px;
+    height: 150px;
+    margin-top: 32.5px;
+}
+
+.InputInfo{
+    width: 300px;
+    height: 18px;
+    margin-top: 50px;
+    font-size: 16px;
+    padding: 10px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    outline: none;
+}
+.InputInfo:first-child{
+    width: 280px;
+    font-size: 16px;
+
+}
+.InputInfo:focus{
+    border-color: #299fd1;
+    transition: 300ms ease-in-out;
+}
+.masked{
+    -webkit-text-security: disc; 
+    -moz-text-security: disc; 
+    input-security: disc;
+}
+.fa-eye{
+    font-size: 20px;
+}
+.fa-eye:hover{
+    scale: 1.03;
+    color: #0060fa;
+    transition: ease-in-out 200ms;
+}
+.minor{
+    font-size: 18.5px;
+    color: #0060fa;
+}
+.minor:hover{
+    scale: 1.05;
+    color: black;
+}
+.submit{
+    width: 200px;
+    height: 50px;
+    margin-top: 40px;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    background: #9CECFB; 
+    background: -webkit-linear-gradient(to right, #0061fd, #06a7f7, #0bb2cf); 
+    background: linear-gradient(to right, #0060fa, #65C7F7, #0060fa);
+    background-size: 400% 400%;
+}
+.submit:hover{
+    animation: Submit-Anim 1.2s ease-in-out;
+    animation-fill-mode:forwards;
+    transition: 300ms;
+    scale: 1.02;
+}
+.cadastro{
+    width: 200px;
+    height: 50px;
+    margin-top: 15px;
+    border-radius: 50px;
+    border: solid 1px;
+    color: #fff;
+    background-color: #252525;
+    font-size: 18px;
+    transition: 300ms;
+}
+.cadastro:hover{
+    color: #252525;
+    background-color: #fff;
+    scale: 1.02;
+}
+@keyframes Submit-Anim{
+	0% {
+		background-position: 0% 50%;
+	}
+	100% {
+		background-position: 130% 50%;
+	}
+}
+
+
+/* Resgistro */
+
+.subTitle{
+    color:#0061fd;
+}

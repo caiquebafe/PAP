@@ -1,0 +1,184 @@
+.fila{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: #1a3846;  
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+}
+
+
+/* ******************** */
+/******** FILA - CARD CONTENTS**********/
+/* ******************** */
+.fila .addMusic {
+    margin-top: 40px;
+    width: 70%;
+    height: 450px;
+    background-color: #2C5364;
+    border-radius: 25px;
+    box-shadow: rgba(32, 32, 34, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.fila .addMusic .fa-circle-play {
+    font-size: 100px;
+    color: #fff;
+}
+
+.fila .addMusic .divMusic {
+    background-color: #252525;
+    height: 150px;
+    width: 150px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid rgba(255, 255, 255, 0.349) 2px;
+    position: absolute;
+    background-size: cover;
+}
+
+.fila .addMusic .divText {
+    color: white;
+    height: 100px;
+    width: 70%;
+    margin-top: 140px;
+    background-color: #252525;
+    border-radius: 15px;
+    box-shadow: rgba(32, 32, 34, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fila .addMusic .musicForm {
+    width: 100%;
+}
+
+.fila .addMusic .inputMusic {
+    width: 70%;
+    height: 42.5px;
+    border-radius: 25px;
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 15px;
+    border: none;
+    outline: none;
+}
+
+.fila .addMusic .inputMusic:focus {
+    outline: none;
+}
+
+.fila .addMusic .musicButton {
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    border: solid 1px;
+    color: #fff;
+    background-color: #252525;
+    margin-top: 20px;
+    font-size: 18px;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.fila .addMusic .musicButton:not(:disabled):hover {
+    color: #252525;
+    background-color: #fff;
+    scale: 1.02;
+}
+
+.fila .addMusic .musicButton:disabled {
+    cursor: not-allowed;
+}
+
+.fila .addMusic .musicButton:not(:first-child) {
+    margin-left: 20px;
+}
+
+.fila .addMusic .buttonLine {
+    width: 100%;
+    display: inline-block;
+}
+
+.fila .musicQueue {
+    margin-top: 40px;
+    width: 70%;
+    margin-bottom: 40px;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: rgba(32, 32, 34, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.fila .musicQueue .noSongs {
+    color: #1a3846;
+}
+
+.fila .musicQueue .note {
+    color: #1a3846;
+    text-transform: uppercase;
+    font-size: 12px;
+    align-self: flex-start;
+    font-weight: bold;
+}
+
+.fila .musicQueue .song img {
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.fila .musicQueue .song {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.fila .musicQueue .song .songText {
+    color: #1a3846;
+    width: 100%;
+    text-align: left;
+}
+
+.fila .musicQueue .song .songText .songName {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.fila .musicQueue .song .songText .songArtist span {
+    font-weight: bold;
+}
+
+.fila .musicQueue .song .songText .songRequestedBy span {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .fila .addMusic {
+        width: 90%;
+    }
+
+    .fila .musicQueue {
+        width: 90%;
+    }
+}

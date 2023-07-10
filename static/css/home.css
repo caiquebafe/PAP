@@ -1,0 +1,70 @@
+
+.home{
+    height: 95vh;  /* unidade vh/vw correspondem a porcentagem do tamanho da tela do usuário  */
+    width: 100vw;
+    background-color: var(--black);
+    background-image: url(../images/Escola.jpg);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.home h1{   /* Texto que fica no meio da págica */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    color: var(--white);
+    padding-top: 27vh;
+    font-size: 5vw;
+    font:bolder;
+    
+    /* Definições da animação */
+    animation-name: HomeH1Animation;
+    animation-duration: 2250ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    user-select: none;
+    
+}
+/* ******************** */
+/******** HOME - ANIMATION **********/
+/* ******************** */
+
+
+
+@keyframes HomeH1Animation{ /* Animação da imagem e frase feita ao entrar no site */
+    from {
+        filter: opacity(0%);
+        backdrop-filter: grayscale(0%) brightness(100%);
+        padding-left: 10vw;
+    }
+    to{
+        filter: opacity(100%);
+        backdrop-filter: grayscale(100%) brightness(50%);
+        text-shadow: 2px 2px 55px var(--black);
+        padding-left: 3vw;
+    }
+}
+
+
+/* *****RESPONSIVIDADE***** */
+
+
+@media (max-width: 1150px) {
+    .home h1{
+        font-size: 6vw;
+    }
+}
+@media (max-width: 850px) {
+    .home h1{
+        font-size: 7vw;
+    }
+}
+@media (max-width: 850px) {
+    .home h1{
+        font-size: 7vw;
+    }
+}

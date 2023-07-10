@@ -1,0 +1,9 @@
+footer{ /* Definições do footer que aparece ao final da página*/
+    display: flex;
+    background-color: #252525;
+    padding: 2vh;
+    color: #fff;
+    font-size: 1.7vh;
+    justify-content: center;
+    user-select: none;
+}

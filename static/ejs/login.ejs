@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rádio ESRP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/static/css/login.css">
+    <link rel="icon" type="image/jpg"  href="/static/images/Logo icone.png">
+    <script src="https://kit.fontawesome.com/0164063218.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="/login" method="post" >
+            <label for="" class="title">Bem-vindo de volta a <br>Rádio ESRP!</label>
+            <img src="/static/images/user.png" alt="">
+
+            <input type="text" placeholder="Email" class="InputInfo" name="InputEmail" autocomplete="off">
+            <div>
+                <input type="text" placeholder="Senha" class="InputInfo masked" name="InputSenha" id="InputSenha" autocomplete="off">
+                <i class="fa-regular fa-eye" id="icon"></i>
+            </div>
+            <button class="submit">Entrar</button>
+        </form>
+
+        <!-- registro -->
+        <form action="/signup" method="post" class="formRegistro">
+            <label for="" class="title">Cadastre-se no nosso site!</label>
+            <label for="" class="subTitle">Vamos precisar de algumas informações sobre você.</label>
+            <input type="text" placeholder="Email" class="InputInfo" name="InputEmailReg" autocomplete="off">
+            <input type="text" placeholder="Número de registo" class="InputInfo" name="InputNumReg" autocomplete="off">
+            <input type="text" placeholder="Turma" class="InputInfo " name="InputTurmaReg" autocomplete="off">
+            <input type="text" placeholder="Senha" class="InputInfo" name="InputSenhaReg" autocomplete="off">
+            <br><br>
+            <button class="cadastro" type="submit">Cadastre-se</button>
+        </form>
+    </div>
+</body>
+<script src="/static/js/login.js"></script>
+</html>
