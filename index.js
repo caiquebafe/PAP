@@ -6,7 +6,7 @@ const { Database } = require('dsc.db');
 const axios = require('axios');
 
 const db = new Database({
-    uri: "mongodb+srv://caiquebafe:Hamachi123@caique.pb9htts.mongodb.net/",
+    uri: "CHAVE_MONGO",
     collection: "radioesrp",
     debug: false,
 });
@@ -42,7 +42,7 @@ app.get("/", (req, res) => {
 // Gerenciamento das musicas
 app.post("/sendSong", async (req, res) => {
     const { InputMusic } = req.body;
-    const apiKey = "AIzaSyCrEL_RkFx2rCiL8gxmzFGwb0ttKWT3QV4";
+    const apiKey = "API_KEY_YOUTUBE";
  
     let url = 'https://www.googleapis.com/youtube/v3/search' +
       '?part=snippet' +
